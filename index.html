@@ -16,39 +16,31 @@
 </head>
 
 <body>
-  <!-- Animated first-visit intro -->
- <div class="intro-screen" id="introScreen" aria-label="Abrashin Technova introduction">
-
-    <div class="intro-orbit orbit-one"></div>
-    <div class="intro-orbit orbit-two"></div>
+  <!-- CINEMATIC INTERACTIVE INTRO -->
+  <section class="intro-screen" id="introScreen" aria-label="Abrashin Technova cinematic introduction">
+    <canvas class="intro-particles" id="introParticles" aria-hidden="true"></canvas>
+    <div class="intro-vignette" aria-hidden="true"></div>
+    <div class="intro-orbit orbit-one" aria-hidden="true"></div>
+    <div class="intro-orbit orbit-two" aria-hidden="true"></div>
 
     <div class="intro-content">
+      <p class="intro-kicker intro-question">A QUESTION BEFORE WE BEGIN</p>
+      <h1 class="intro-title">
+        WHERE ARE<br><em>WE GOING?</em>
+      </h1>
+      <p class="intro-message">Towards a future where ideas become<br class="desktop-break"> unforgettable digital experiences.</p>
 
-        <div class="intro-mark">
-            <img
-                src="./images/Abrashin_logo_without_bg.png"
-                alt="Abrashin Technova logo"
-            >
-        </div>
+      <button class="intro-logo-button" id="enterExperience" type="button"
+        aria-label="Enter Abrashin Technova website">
+        <span class="logo-energy" aria-hidden="true"></span>
+        <img src="./images/Abrashin_logo_without_bg.png" alt="Abrashin Technova official logo">
+        <span class="logo-click-hint">CLICK TO ENTER <b>↗</b></span>
+      </button>
 
-        <p class="intro-kicker">
-            CREATIVE THINKING. DIGITAL GROWTH.
-        </p>
-
-        <h1>
-            Make your brand<br>
-            <em>impossible to ignore.</em>
-        </h1>
-
-        <div class="intro-loader">
-            <span></span>
-        </div>
-
-        <small>WELCOME TO ABRASHIN TECHNOVA</small>
-
+      <p class="intro-footer">CREATIVE THINKING. DIGITAL GROWTH.</p>
     </div>
-</div>
-
+    <div class="intro-side-note">ABRASHIN TECHNOVA <span>—</span> DIGITAL STUDIO</div>
+  </section>
 
   <div class="page-transition" id="pageTransition" aria-hidden="true">
     <div class="transition-orbit"></div>
@@ -305,7 +297,8 @@
         reserved.</span><a class="back-top" href="#home">BACK TO TOP ↑</a>
     </footer>
   </div>
-  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="script.js" defer></script>
 </body>
 
 </html>
